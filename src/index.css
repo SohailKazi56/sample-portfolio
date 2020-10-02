@@ -1,13 +1,313 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand{
+  font-size: 3.0rem;
+  color: blue;
 }
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.navbar a:hover{
+  color: aqua;
+}
+
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+#header{
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+
+#header h1{
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+#header .btn-about-us{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid #565387;
+  text-decoration: none;
+}
+#header .btn-about-us:hover{
+  color: white;
+  background: blueviolet;
+}
+
+#header .header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 991px){
+  #header{
+    height: 80vh;
+    text-align: center  ;
+  }
+
+  #header .header-img{
+    text-align: center;
+  }
+  
+  #header .header-img img{
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px){
+  #header{
+    margin-top: 10px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  #header .header-img img{
+    width: 70%;
+  }
+}
+
+/** contact design **/
+
+.card{ 
+	position: relative;
+	flex: 1;
+	width: 100px;
+	height: 120px;
+	background-color: #444;
+	margin: 20px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.icon{
+	font-size: 40px;
+	color: #b189d6;
+	transition: .3s linear;
+}
+
+.card:hover .icon{
+	font-size: 60px;
+	opacity: 0;
+}
+
+
+
+.content-info h3{
+	position: absolute;
+	opacity: 0;
+	top: 20px;
+	color: blueviolet;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	font-weight: 600;
+  opacity: 0;
+}
+
+.content-info span{
+	position: absolute;
+	opacity: 0;
+	bottom: 20px;
+	color: #565387;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 20px;
+	font-weight: 600;
+
+}
+
+.card:hover h3{
+	opacity: 1;
+	top: 30px;
+	transition: .3s linear .3s;
+}
+
+.card:hover span{
+	opacity: 1;
+	bottom: 30px;
+	transition: .3s linear .3s;
+}
+
+.contact-div{
+  height: 450px;
+}
+
+.contact-div-2{
+  background: #e7dcf1;
+  height: 450px;
+  left: -100px;
+}
+
+
+/** contact design  ends **/
+
+/** About page starts  **/
+.about-us-section{
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.about-title{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about-para{
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.contact-btn{
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+
+.team-section{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 40px 0; 
+  background: linear-gradient(156deg, #b189d6 50%, #fff 0%);
+}
+
+.headings{
+  margin-bottom: 80px;
+}
+
+.team-row{
+  margin-bottom: 80px;
+  padding: 40px;
+}
+
+.box{
+  width: 300px;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+	border-radius: 2px;
+  transition: 0.3s ease;
+  background-color: white;
+}
+
+.box:hover{
+  background: #b080dd;
+  transform: translateY(-20px);
+  box-shadow: #b080dd;
+}
+
+.box img{
+	width: 100px;
+	height:100px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+.box h1{
+  
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+.box p{
+  font-size: 14px;
+  margin : 30px 25px;
+}
+
+.box:hover p{
+  color: white;
+}
+
+.box h3{
+	font-size: 16px;
+	font-weight: 400;
+	color: #666666;
+	margin-bottom: 20px;
+}
+
+.offering-section{
+  padding: 40px 0 ;
+  margin: 100px 0 ;
+  width: 100%;
+  width: auto;
+  text-align: center;
+}
+.box-container{
+  width: 250px;
+  height: 250px;
+}
+
+.box-container:hover{
+  transition: .3s;
+  transform: translateY(-20px);
+  box-shadow: #b080dd; 
+}
+
+.offering-heading{
+  margin-bottom: 80px;
+}
+
+/** About page ends  **/
+
+
+
+
+
