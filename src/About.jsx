@@ -2,7 +2,8 @@ import React from 'react';
 import web from "../src/images/sohail.jpg"
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedinIn,  faTwitter, faHackerrank, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faAndroid, faFirefoxBrowser } from '@fortawesome/free-brands-svg-icons'
+import { faPencilRuler, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
@@ -89,25 +90,25 @@ const Home = () => {
                         <div className="row" style={{marginTop:"50px",padding:"30px"}}>
                             <div className="col-lg-3 col-md-3 align-items-center">
                                 <div className="box-container" style={{backgroundColor:"#AEB6BF"}}>            
-                                    <FontAwesomeIcon icon={faGithub} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
+                                    <FontAwesomeIcon icon={faFirefoxBrowser} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Web Design</h1>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-3 align-items-center">
                                 <div className="box-container" style={{backgroundColor:"#D1F2EB "}}>            
-                                    <FontAwesomeIcon icon={faGithub} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
+                                    <FontAwesomeIcon icon={faAndroid} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Android Development</h1>
                                 </div>
                             </div> 
                             <div className="col-lg-3 col-md-3 align-items-center">
                                 <div className="box-container" style={{backgroundColor:"#FCF3CF"}}>            
-                                    <FontAwesomeIcon icon={faGithub} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
+                                    <FontAwesomeIcon icon={faPencilRuler} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Graphic Design </h1>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-3 align-items-center">
                                 <div className="box-container" style={{backgroundColor:"#F5B7B1"}}>            
-                                    <FontAwesomeIcon icon={faGithub} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
+                                    <FontAwesomeIcon icon={faProjectDiagram} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Mini Projects</h1>
                                 </div>
                             </div>          
