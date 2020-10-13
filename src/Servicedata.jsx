@@ -8,7 +8,7 @@ import Design from "./images/webdesign.jpg";
 const Sdata = [
     {
         imgsrc : web,
-        title : "web development",
+        title : "Web development",
         content : "React website using bootstrap."
     },
     {
@@ -23,7 +23,7 @@ const Sdata = [
     },
     {
         imgsrc : Development,
-        title : "Development development",
+        title : "Python Projects",
         content : "python projects using tkinter as frontend & sqlite3 as backend "
     },
     {
@@ -33,7 +33,7 @@ const Sdata = [
     },
     {
         imgsrc : Design,
-        title : "web Designing",
+        title : "Web Designing",
         content : "Simple wordpress portfolio website"
     },
 ];

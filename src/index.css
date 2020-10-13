@@ -65,7 +65,9 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@-webkit-keyframes up-down{
+/* animation part */
+
+/* @-webkit-keyframes up-down{
   0%{
     transform: translateY(10px);
   }
@@ -81,12 +83,16 @@
   100%{
     transform: translateY(-10px);
   }
-}
+} */
 
 @media (max-width: 991px){
   #header{
-    height: 80vh;
-    text-align: center  ;
+    height: auto;
+    text-align: center;
+  }
+
+  #header .get-started-btn{
+    padding-bottom: 50px;
   }
 
   #header .header-img{
@@ -95,6 +101,22 @@
   
   #header .header-img img{
     width: 60%;
+  }
+
+  #offering-id .offer-box{
+    padding-bottom: 40px;
+  }
+
+  #teamId .team-box{
+    padding-bottom: 40px;
+  }
+
+  #aboutId .about-title{
+    padding-top: 30px;
+  }
+
+  #contact-header .main-container .second-contact-box{
+    padding-top: 40px;
   }
 }
 
@@ -227,9 +249,7 @@
   background: linear-gradient(156deg, #b189d6 50%, #fff 0%);
 }
 
-.headings{
-  margin-bottom: 80px;
-}
+
 
 .team-row{
   margin-bottom: 80px;
@@ -284,10 +304,8 @@
 }
 
 .offering-section{
-  padding: 40px 0 ;
-  margin: 100px 0 ;
   width: 100%;
-  width: auto;
+  padding-bottom: 40px;
   text-align: center;
 }
 .box-container{

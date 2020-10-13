@@ -45,7 +45,7 @@ const Contact = () => {
 
             <section id="contact-header" className="d-flex align-items-center">
                 
-                <div className="container-fluid" >
+                <div className="container-fluid main-container" >
                     <div className="text-center mx-5 my-3">
                         <h1 style={{color:'blueviolet'}}>
                             Wanna get in touch ???
@@ -87,7 +87,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4 order-2 order-lg-2  d-flex justify-content-center flex-column" style={{width:'350px'}}>
+                                <div className="col-lg-4 order-2 order-lg-2 d-flex justify-content-center flex-column second-contact-box"  style={{width:'350px'}}>
                                     
                                     <div className="container contact-div-2" >
                                         <div className="my-4 justify-content-center">

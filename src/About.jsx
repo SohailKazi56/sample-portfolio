@@ -25,7 +25,7 @@ const Home = () => {
 
                                 <div className="col-lg-6 order-2 order-lg-2 "style={{background:'white',marginLeft:'15px'}}  >
                                                       
-                                    <h1 className="about-title">
+                                    <h1 className="about-title ">
                                         About Me
                                     </h1>
                                     <p className="about-para">
@@ -52,7 +52,7 @@ const Home = () => {
                         
                         <div className="row team-row ">
                             
-                                <div className="col-lg-4 col-md-4 align-items-center">
+                                <div className="col-lg-4 col-md-4 align-items-center team-box">
                                     <div className="box">
                                         <img src={web} className="card-img-top" alt="card-img" />
                                         <p> A professional graphics designer. With number of projects completed efficiently.</p>
@@ -60,7 +60,7 @@ const Home = () => {
                                         <h3>Graphics Designer</h3>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-4 align-items-center">
+                                <div className="col-lg-4 col-md-4 align-items-center team-box">
                                     <div className="box">
                                         <img src={web} className="card-img-top" alt="card-img" />
                                         <p> A professional graphics designer. With number of projects completed efficiently.</p>
@@ -68,7 +68,7 @@ const Home = () => {
                                         <h3>Web Designer</h3>
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-4 align-items-center">
+                                <div className="col-lg-4 col-md-4 align-items-center team-box">
                                     <div className="box">
                                         <img src={web} className="card-img-top" alt="card-img" />
                                         <p> A professional graphics designer. With number of projects completed efficiently.</p>
@@ -86,27 +86,27 @@ const Home = () => {
                 <div className="container offering-heading text-center" >
                     <h1 className="text-center text-uppercase font-weight-bold"  style={{color:'#653a8b'}}>Service Offering</h1>
                 </div>
-                    <div col-10 mx-auto>
+                    <div className="col-10 mx-auto align-items-center" >
                         <div className="row" style={{marginTop:"50px",padding:"30px"}}>
-                            <div className="col-lg-3 col-md-3 align-items-center">
+                            <div className="col-lg-3 col-md-3 align-items-center offer-box">
                                 <div className="box-container" style={{backgroundColor:"#AEB6BF"}}>            
                                     <FontAwesomeIcon icon={faFirefoxBrowser} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Web Design</h1>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-3 align-items-center">
+                            <div className="col-lg-3 col-md-3 align-items-center offer-box">
                                 <div className="box-container" style={{backgroundColor:"#D1F2EB "}}>            
                                     <FontAwesomeIcon icon={faAndroid} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Android Development</h1>
                                 </div>
                             </div> 
-                            <div className="col-lg-3 col-md-3 align-items-center">
+                            <div className="col-lg-3 col-md-3 align-items-center offer-box ">
                                 <div className="box-container" style={{backgroundColor:"#FCF3CF"}}>            
                                     <FontAwesomeIcon icon={faPencilRuler} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Graphic Design </h1>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-3 align-items-center">
+                            <div className="col-lg-3 col-md-3 align-items-center offer-box">
                                 <div className="box-container" style={{backgroundColor:"#F5B7B1"}}>            
                                     <FontAwesomeIcon icon={faProjectDiagram} style={{width:"90px",height:"90px", justifyItems:"center",marginTop:"50px",color:"#653a8b"}} />                        
                                     <h1 style={{fontSize:"18px", textAlign:"center",marginBottom:"10px", marginTop:"40px",fontWeight:"bold",color:"#653a8b"}}>Mini Projects</h1>

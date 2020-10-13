@@ -18,7 +18,7 @@ const Common = (props) => {
                                 <h2 style={{fontSize:'1.5rem'}}>
                                     We are the team of talented developer making websites
                                 </h2>
-                                <div className="mt-3">
+                                <div className="mt-3 get-started-btn">
                                     <NavLink to={props.visit} className="btn-about-us">
                                         {props.btnName}
                                     </NavLink>
